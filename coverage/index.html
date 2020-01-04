@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-04T14:01:50+00:00">2020-01-04T14:01:50+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-04T14:59:40+00:00">2020-01-04T14:59:40+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">99.04%</span></span>
+    (<span class="covered_percent"><span class="green">99.53%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.4
+         1.39
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>25</b> files in total.
-    <b>208</b> relevant lines. 
-    <span class="green"><b>206</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>212</b> relevant lines. 
+    <span class="green"><b>211</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -82,11 +82,11 @@
       
       <tr>
         <td class="strong"><a href="#0519a9255db2ecdfb74456c6972c2b9f7b644220" class="src_link" title="app/controllers/exchanges_controller.rb">app/controllers/exchanges_controller.rb</a></td>
-        <td class="green strong">93.75 %</td>
+        <td class="green strong">100.0 %</td>
         <td>37</td>
         <td>16</td>
-        <td>15</td>
-        <td>1</td>
+        <td>16</td>
+        <td>0</td>
         <td>1.5</td>
       </tr>
       
@@ -117,7 +117,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -253,9 +253,9 @@
       <tr>
         <td class="strong"><a href="#760a1cf0ac887b4c907cf1ff3cb54ae833d846e3" class="src_link" title="spec/controllers/exchanges_controller_spec.rb">spec/controllers/exchanges_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>16</td>
-        <td>16</td>
+        <td>35</td>
+        <td>20</td>
+        <td>20</td>
         <td>0</td>
         <td>1.1</td>
       </tr>
@@ -396,8 +396,8 @@
           <code class="ruby">      raw_response = RestClient.get(service_url(source_currency, target_currency))</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">      current_quote = JSON.parse(raw_response.body)[&quot;currency&quot;][0][&quot;value&quot;].to_f</code>
         </li>
@@ -408,8 +408,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="14">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
           <code class="ruby">      current_quote</code>
         </li>
@@ -420,8 +420,8 @@
           <code class="ruby">    rescue RestClient::ExceptionWithResponse</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">      raise QuoteUnavailable</code>
         </li>
@@ -736,11 +736,11 @@
         <div class="source_table" id="0519a9255db2ecdfb74456c6972c2b9f7b644220">
   <div class="header">
     <h3>app/controllers/exchanges_controller.rb</h3>
-    <h4><span class="green">93.75 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>16</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -807,8 +807,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    render json: { &quot;generated_at&quot;: DateTime.current, &quot;value&quot;: value }</code>
         </li>
@@ -816,11 +816,11 @@
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  rescue DailyQuoteAdpater::QuoteUnavailable</code>
+          <code class="ruby">  rescue DailyQuoteAdapter::QuoteUnavailable</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">    render json: { error: &quot;Quote not found&quot;, value: 0 }, status: :unprocessable_entity</code>
         </li>
@@ -1356,8 +1356,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="16">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">    (value * amount).round(2)</code>
         </li>
@@ -3053,8 +3053,8 @@
     <h3>spec/controllers/exchanges_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>20</b> relevant lines. 
+      <span class="green"><b>20</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3197,19 +3197,19 @@
         <li class="covered" data-hits="2" data-linenumber="23">
           <span class="hits">2</span>
           
-          <code class="ruby">      let(:exchange_params) { { source_currency: 1, target_currency: 2, amount: -1 } }</code>
+          <code class="ruby">      let(:exchange_params) { { source_currency: &#39;AAA&#39;, target_currency: &#39;AAA&#39;, amount: -1 } }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;rescue QuoteUnavailable&quot;, :vcr do</code>
+          <code class="ruby">      before do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">        get &quot;/api/currency/convert&quot;, params: exchange_params</code>
+          <code class="ruby">        allow(RestClient).to(receive(:get).and_raise(RestClient::ExceptionWithResponse))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -3221,16 +3221,52 @@
         <li class="never" data-hits="" data-linenumber="27">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;rescue QuoteUnavailable&quot;, :vcr do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        get &quot;/api/currency/convert&quot;, params: exchange_params</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to have_http_status(422)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(JSON.parse(response.body)).to eq(&quot;error&quot; =&gt; &quot;Quote not found&quot;,&quot;value&quot; =&gt; 0)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>

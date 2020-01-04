@@ -9,7 +9,7 @@ class ExchangesController < ApplicationController
     end
 
     render json: { "generated_at": DateTime.current, "value": value }
-  rescue DailyQuoteAdpater::QuoteUnavailable
+  rescue DailyQuoteAdapter::QuoteUnavailable
     render json: { error: "Quote not found", value: 0 }, status: :unprocessable_entity
   end
 
