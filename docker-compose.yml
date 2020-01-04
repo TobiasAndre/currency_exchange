@@ -1,0 +1,22 @@
+version: '3'
+services:
+  redis:
+    image: 'redis:5.0.5-alpine'
+    command: redis-server
+    volumes:
+      - 'redis:/data'
+    ports:
+      - '6379:6379'
+
+  app:
+    depends_on:
+      - 'redis'
+    build: .
+    command: bash start.sh
+    volumes:
+      - .:/app
+    ports:
+      - "8081:8081"
+volumes:
+  redis:
+  gems:

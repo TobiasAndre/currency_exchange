@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://currencydatafeed.com/api/data.php?currency=BRL/EUR&token=6oug4irxocxs9gn42y06
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.2.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - currencydatafeed.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2020 13:49:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4b2a28e0a28536726d070c2077bb2ed41578145781; expires=Mon, 03-Feb-20
+        13:49:41 GMT; path=/; domain=.currencydatafeed.com; HttpOnly; SameSite=Lax
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, X-Requested-With
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 54fdad5c4d3af728-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":true,"currency":[{"currency":"BRL\/EUR","value":"0.22081","date":"2020-01-04
+        16:19:01","type":"reversed"}]}'
+    http_version: 
+  recorded_at: Sat, 04 Jan 2020 13:49:41 GMT
+recorded_with: VCR 5.0.0

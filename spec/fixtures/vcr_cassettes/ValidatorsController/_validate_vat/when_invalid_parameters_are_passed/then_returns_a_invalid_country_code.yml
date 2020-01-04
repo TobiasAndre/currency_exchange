@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cloudmersive.com/validate/vat/lookup
+    body:
+      encoding: UTF-8
+      string: '{"VatCode":"CZ25123"}'
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.4.1/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Apikey:
+      - 901e09b9-fedf-498d-a1c2-643e928fb9ba
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Cloudmersive Server
+      Request-Context:
+      - appId=cid-v1:8f4affcb-9df1-4f80-b09b-9ef880575d00
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Powered-By:
+      - ARR/3.0
+      - Cloudmersive
+      Date:
+      - Sat, 04 Jan 2020 13:49:39 GMT
+      Content-Length:
+      - '275'
+    body:
+      encoding: UTF-8
+      string: '{"CountryCode":"CZ","VatNumber":"25123","IsValid":false,"BusinessName":"---","BusinessAddress":"---","BusinessBuilding":null,"BusinessStreetNumber":null,"BusinessStreet":null,"BusinessCity":null,"BusinessStateOrProvince":null,"BusinessPostalCode":null,"BusinessCountry":null}'
+    http_version: 
+  recorded_at: Sat, 04 Jan 2020 13:49:39 GMT
+recorded_with: VCR 5.0.0

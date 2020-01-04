@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://currencydatafeed.com/api/data.php?currency=1/2&token=6oug4irxocxs9gn42y06
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.2.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - currencydatafeed.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Jan 2020 13:49:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6a717dfd72fb75d1d6ec5078ae8c9baf1578145777; expires=Mon, 03-Feb-20
+        13:49:37 GMT; path=/; domain=.currencydatafeed.com; HttpOnly; SameSite=Lax
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, X-Requested-With
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 54fdad43eed5f207-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":true,"currency":[{"currency":"1\/2","error":"No data is available"}]}'
+    http_version: 
+  recorded_at: Sat, 04 Jan 2020 13:49:37 GMT
+recorded_with: VCR 5.0.0

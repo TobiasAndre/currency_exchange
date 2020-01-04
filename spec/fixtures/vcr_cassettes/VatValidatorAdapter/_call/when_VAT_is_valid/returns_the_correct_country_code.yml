@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cloudmersive.com/validate/vat/lookup
+    body:
+      encoding: UTF-8
+      string: '{"VatCode":"CZ25123891"}'
+    headers:
+      User-Agent:
+      - Swagger-Codegen/1.4.1/ruby
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Apikey:
+      - 901e09b9-fedf-498d-a1c2-643e928fb9ba
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Cloudmersive Server
+      Request-Context:
+      - appId=cid-v1:8f4affcb-9df1-4f80-b09b-9ef880575d00
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Powered-By:
+      - ARR/3.0
+      - Cloudmersive
+      Date:
+      - Sat, 04 Jan 2020 13:49:29 GMT
+      Content-Length:
+      - '348'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJDb3VudHJ5Q29kZSI6IkNaIiwiVmF0TnVtYmVyIjoiMjUxMjM4OTEiLCJJc1ZhbGlkIjp0cnVlLCJCdXNpbmVzc05hbWUiOiJLK0sgSG90ZWwgcy5yLm8uIiwiQnVzaW5lc3NBZGRyZXNzIjoiVmUgU21lxI1rw6FjaCA1OTYvMzBcblBSQUhBIDEgLSBOT1bDiSBNxJpTVE9cbjExMCAwMCAgUFJBSEEgMSIsIkJ1c2luZXNzQnVpbGRpbmciOm51bGwsIkJ1c2luZXNzU3RyZWV0TnVtYmVyIjpudWxsLCJCdXNpbmVzc1N0cmVldCI6bnVsbCwiQnVzaW5lc3NDaXR5IjpudWxsLCJCdXNpbmVzc1N0YXRlT3JQcm92aW5jZSI6bnVsbCwiQnVzaW5lc3NQb3N0YWxDb2RlIjpudWxsLCJCdXNpbmVzc0NvdW50cnkiOm51bGx9
+    http_version: 
+  recorded_at: Sat, 04 Jan 2020 13:49:29 GMT
+recorded_with: VCR 5.0.0
