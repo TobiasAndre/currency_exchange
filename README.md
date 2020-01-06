@@ -1,6 +1,10 @@
 # Ruby on rails Microservice
 This project is a Ruby on rails microservice without database using Redis to cache endpoints. According to the fact that the main features are provided from external 3rd part APIs, the database option was removed. This API gets the user parameters and call another service to process request and return the required information.
 
+# master.key
+I changed the .gitignore to permit sending master.key to allow reviewers to run the project that
+uses credentials to store 3rd part service credentials.
+
 ### Endpoints
 
     http://localhost:8081/api/datetime/current
